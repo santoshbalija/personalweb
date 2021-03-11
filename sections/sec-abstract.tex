@@ -1,0 +1,16 @@
+%!TEX root = ..\arxiv_Dampinguncertanity_manuscript.tex
+%-------------------------------
+%*******************************
+The logarithmic decrement (log-dec) is one of the most popular methods for viscous damping estimation in linear, single degree of freedom systems. 
+It estimates the damping ratio by examining the decay in the amplitude between two peaks some number of cycles apart. 
+The accuracy in the estimation is sensitive to the chosen number of cycles, where the latter can be optimized such that the uncertainty in the estimation is minimized. 
+However, the log-dec method is not suitable for systems with high damping ratios (approximately $>0.3$).  
+Another recent approach for damping estimation is based on considering a ratio of the amplitudes of the positive and negative areas in the free response of the oscillator. 
+Although prior works on the areas method only tested lightly damped systems, we show here that---in contrast to log-dec---this approach can estimate the damping ratio over the whole range of underdamped linear oscillators. 
+However, in contrast to log-dec, there are no available guidelines on how many areas to include in the damping estimation. 
+In this work, we derive uncertainty analysis expressions for the areas method and we utilize them to obtain the optimal number of areas to use. 
+Our results show that for a very low damping ratio ($<0.01$), choosing more than two areas in the estimation increases the uncertainty. 
+In contrast, for moderate to high damping (between $0.05$ and $1$), we need to consider all the available areas in the estimation. 
+One caveat in the range of high damping (between $0.3$ and $1$) is that while it is desirable to include all the available areas, uncertainty increases when considering up to 3 areas. 
+Therefore, if only 4 areas are available in this range, then to reduce the uncertainty in the estimate only the first two areas must be considered. 
+The results are verified using a large number of numerical simulations including different levels of noise. 

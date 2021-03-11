@@ -1,0 +1,98 @@
+%%% use twocolumn and 10pt options with the asme2e format
+\documentclass[twocolumn,10pt]{asme2e}
+\special{papersize=8.5in,11in}
+
+
+%%% Packages
+\usepackage{nameref}
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+\usepackage{multirow}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{newtxtext}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{amsmath, amssymb}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{color}
+
+\graphicspath{{Figures/}}
+%Added commands
+\newcommand{\todo}[1]{{\textcolor{Red}{\bf[[Todo: #1]]}}}
+
+
+
+
+\confshortname{IDETC/CIE 2021}
+\conffullname{the ASME 2021\\ International Design Engineering Technical Conferences \&\\
+              Computers and Information in Engineering Conference}
+
+\confdate{August 17--21}
+\confyear{2021}
+\confcity{Virtual}
+\confcountry{Online}
+
+%%% Replace DETC2009/MESA-12345 with the number supplied to you 
+%%% by ASME for your paper.
+%<<<<<<< HEAD
+\papernum{DETC2021-XXXXX}
+%=======
+\papernum{DETC2021/VIB-XXXXX}
+%>>>>>>> fcf48567cfddc0253a6ce281f9fdf7074a3dd825
+
+%%% You need to remove 'DRAFT: ' in the title for the final submitted version.
+\title{Guidelines for Optimizing the error in area ratio damping estimation method}
+
+%%% first author
+\author{Balija Santoshkumar\thanks{Address all correspondence to this author.}
+    \affiliation{
+	Department of Mechanical Engineering\\
+	Michigan State University\\
+	East Lansing, Michigan 48824\\
+    Email: balijasa@msu.edu
+    }	
+}
+
+%%% second author
+%%% remove the following entry for single author papers
+%%% add more entries for additional authors
+\author{Firas A.~Khasawneh 
+    \affiliation{
+	Department of Mechanical Engineering\\
+	Michigan State University\\
+	East Lansing, Michigan 48824\\
+    Email: khasawn3@egr.msu.edu
+    }
+}
+
+\begin{document}
+
+\maketitle    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+  \input{sections/sec-abstract}
+\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{sections/sec-intro-arxiv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{sections/sec-background-arxiv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{sections/sec-method}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{sections/sec-numerical-arxiv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{sections/sec-conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{ACKNOWLEDGMENTS}
+\label{sec:acknowledgments}
+% %*******************************
+This material is based upon work supported by the National Science Foundation under grants CMMI-1759823 and DMS1759824. 
+\newpage
+\bibliographystyle{plain}
+\bibliography{bib}
+
+\end{document}
